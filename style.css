@@ -1,0 +1,357 @@
+/* Global Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+.aladin-regular {
+    font-family: "Aladin", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Main Styles */
+
+.flex-div{
+    display: flex;
+    background-color: #E9F8E5;
+}
+
+.illustration-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61.6875rem;
+    width: 50%;
+}
+
+.illustration-div img{
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.content-div{
+    width: 50%;
+    background-color: #FCFEFF;
+    border-radius: 25px 0 0 25px;
+    box-shadow: -6px 0 12px 0 rgba(0, 0, 0, 0.05),
+                -22px 0 22px 0 rgba(0, 0, 0, 0.04),
+                -50px 0 30px 0 rgba(0, 0, 0, 0.03),
+                -89px 0 36px 0 rgba(0, 0, 0, 0.01),
+                -139px 0 39px 0 rgba(0, 0, 0, 0);
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 74.5px;
+}
+
+.logo-div img{
+    height: 2.5625rem;
+    width: 2.5625rem;
+}
+
+.logo-div p{
+    margin: 0 0 0 1rem;
+    font-size: 2.5rem; 
+    color: #020D19;
+    opacity: 90%;
+}
+
+.create-account{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 114.5px;
+    font-size: 2.125rem;
+    opacity: 70%;
+}
+
+.form-div{
+    display: flex;
+    justify-content: center;
+    gap: 6.25rem;
+    position: relative;
+    top: 164.5px;
+}
+
+label{
+    font-size: 1.25rem;
+    opacity: 80%;
+}
+
+.form-div img{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 50%;
+}
+
+::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    opacity: 50%;
+}
+
+input{
+    height: 3.125rem;
+    width: 31.25rem;
+    padding: 0 0 0 3.4375rem;
+    border: 2.5px solid;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-second-div{
+    position: relative;
+    top: 30px;
+}
+
+.form-third-div{
+    position: relative;
+    top: 60px;
+}
+
+.name-div,
+.email-div, 
+.password-div{
+    position: relative;
+    top: 10px;
+}
+
+.name-div img, 
+.email-div img,
+.password-div img{
+    position: absolute;
+    top: 12px;
+    left: 27px;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+button{
+    position: relative;
+    top: 140px;
+    height: 3.125rem;
+    width: 31.25rem;
+    font-size: 1.375rem;
+    border: none;
+    border-radius: 30px 20px 30px 20px;
+    color: #FCFEFF;
+    background-color: #73895D;
+    cursor: pointer;
+}
+
+.or{
+    position: relative;
+    top: 335px;
+    font-size: 1.625rem;
+    color: #B0BAC3;
+}
+
+.socials-div{
+    display: flex;
+    justify-content: center;
+    gap: 2.25rem;
+    position: relative;
+    top: 365px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.socials-div img{
+    padding: .625rem;
+    border: 1px solid;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.content-div p, 
+.span-div{
+    display: flex;
+    justify-content: center;
+}
+
+.span-div{
+    position: relative;
+    top: 405px;
+    padding: 0 0 4.6875rem 0;
+    font-size: 1.125rem;
+}
+
+.first-span{
+    color: #4A4A4A;
+}
+
+.second-span{
+    margin: 0 0 0 .625rem;
+    color: #73895D;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px){
+    .flex-div{
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .illustration-div,
+    .content-div{
+        width: 100%;
+    }
+
+    .illustration-div{
+        height: 15.625rem;
+    }
+
+    .illustration-div img{
+        position: relative;
+        top: 98px;
+        width: 15.625rem;
+    }
+
+    .content-div{
+        box-shadow: none; 
+        border-radius: 0; 
+        background-color: transparent;
+    }
+    
+    .logo-div{
+        position: absolute;
+        top: 58px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.5625rem; 
+        opacity: 90%;
+    }
+
+    .logo-div img{
+        height: 1.8125rem;
+        width: 1.8125rem;
+    }
+
+    .logo-div p{
+        margin: 0 0 0 .75rem;
+        font-size: 1.5625rem; 
+    }
+
+    .create-account{
+        position: relative;
+        top: 99px;
+        font-size: 1.25rem;
+        opacity: 70%;
+    }
+
+    .form-div{
+        position: relative;
+        top: 109px;
+    }
+
+    label{
+        font-size: .9375rem;
+        opacity: 70%;
+    }
+
+    .name-div,
+    .email-div, 
+    .password-div{
+        position: relative;
+        top: 9px;
+    }    
+
+    .name-div img, 
+    .email-div img,
+    .password-div img{
+        top: 12px;
+        height: 1.25rem;
+        width: 1.25rem;
+    }   
+
+    input{
+        height: 2.8125rem;
+        width: 22.5rem;
+        border-radius: 28px;
+    }
+
+    ::placeholder{
+        font-size: .875rem;
+    }
+
+    .form-second-div{
+        position: relative;
+        top: 20px;
+    }
+
+    .form-third-div{
+        position: relative;
+        top: 40px;
+    }
+
+    button{
+        top: 77px;
+        width: 22.5rem;
+        font-size: .9375rem;
+        border-radius: 105px;
+    }
+
+    .or{
+        top: 202px;
+        font-size: .75rem;
+    }
+
+    .socials-div{
+        top: 218px;
+        gap: 1.25rem;
+    }
+
+    .socials-div img{
+        padding: .375rem;
+        border-radius: 60px;
+    }
+
+    .span-div{
+        top: 238px;
+        padding: 0 0 1.25rem 0;
+        font-size: 1rem;
+    }
+
+    .second-span{
+        margin: 0 0 0 .5rem;
+    }
+}
